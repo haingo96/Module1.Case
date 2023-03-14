@@ -52,11 +52,11 @@ div.gameElement {
     border-width: 1px;
     width: 45px;
     height: 45px;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 45px;
     text-align: center;
     font-weight: bold;
-    font-family: "Yu Gothic UI Semilight";
+    font-family: cursive;
 }
 
 div.lineContainer {

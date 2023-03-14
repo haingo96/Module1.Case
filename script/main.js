@@ -4,19 +4,3 @@ let turn = 0
 
 createGameBoard(gameBoard)
 displayGameBoard()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

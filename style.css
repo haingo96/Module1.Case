@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Yu Gothic UI Semilight";
 }
 
-h6 {
+h1 {
     text-align: center;
+    font-size: xxx-large;
 }
 
 span.hai {
@@ -22,7 +24,7 @@ span.game {
 div.gameContainer {
     margin: auto;
     border-color: green;
-    border-width: 0.5px;
+    border-width: 2px;
     border-style: solid;
     width: fit-content;
     position: relative;
@@ -37,7 +39,7 @@ div.gameContainer {
     background-image: url(gameBackground.jpg);
     width: 100%;
     height: 100%;
-    z-index: -2000;
+    z-index: -100;
     background-size: cover;
     background-position: center;
     opacity: 0.25;
@@ -47,16 +49,18 @@ div.gameContainer {
 div.gameElement {
     border-color: green;
     border-style: solid;
-    border-width: 0.2px;
-    width: 10px;
-    height: 10px;
-    font-size: 8px;
+    border-width: 1px;
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    line-height: 45px;
     text-align: center;
     font-weight: bold;
+    font-family: "Yu Gothic UI Semilight";
 }
 
 div.lineContainer {
     display: flex;
-    height: 10px;
+    height: 45px;
     width: fit-content;
 }

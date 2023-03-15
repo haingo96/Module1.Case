@@ -4,9 +4,31 @@
     font-family: "Yu Gothic UI Semilight";
 }
 
+section.header{
+    text-align: center;
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+button.playAgain{
+    border-width: 7px;
+    border-color: darkgreen;
+    border-style: wave;
+    border-radius: 5px;
+    width: 150px;
+    height: 55px;
+    margin-top: 7px;
+    font-family: "Yu Gothic UI Semilight";
+    font-size: x-large;
+}
+
 h1 {
     text-align: center;
     font-size: xxx-large;
+    display: inline-block;
+    margin: 0;
 }
 
 span.hai {

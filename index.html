@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>
-    <span class="hai">Ｃｈｉｐの</span>
-    <span class="caro">〇</span>
-    <span class="game">✘</span>
-    <span class="hai">ゲーム</span>
-</h1>
+<section class="header">
+    <h1>
+        <span class="hai">Ｃｈｉｐの</span>
+        <span class="caro">〇</span>
+        <span class="game">✘</span>
+        <span class="hai">ゲーム</span>
+    </h1>
+    <button class="playAgain" onclick="reloadGameBoard()">Play again</button>
+</section>
+
 <div id="gameContainer" class="gameContainer"></div>
 
+<script src="script/reloadGameBoard.js"></script>
 <script src="script/checkLeftDownDiagonal.js"></script>
 <script src="script/checkRightDownDiagonal.js"></script>
 <script src="script/checkGameBoard.js"></script>

@@ -8,11 +8,7 @@ function checkUpperLeftDownDiagonal(gameBoard) {
                 && gameBoard[k + 2][l - 2] === gameBoard[k + 3][l - 3]
                 && gameBoard[k + 3][l - 3] === gameBoard[k + 4][l - 4]
             ) {
-                if (gameBoard[k][l] === 'X') {
-                    alert('X won!')
-                } else {
-                    alert('O won!')
-                }
+                alertSetResult(gameBoard[k][l])
                 reloadAfterWin()
             }
         }
@@ -29,11 +25,7 @@ function checkLowerLeftDownDiagonal(gameBoard) {
                 && gameBoard[k + 2][l - 2] === gameBoard[k + 3][l - 3]
                 && gameBoard[k + 3][l - 3] === gameBoard[k + 4][l - 4]
             ) {
-                if (gameBoard[k][l] === 'X') {
-                    alert('X won!')
-                } else {
-                    alert('O won!')
-                }
+                alertSetResult(gameBoard[k][l])
                 reloadAfterWin()
             }
         }

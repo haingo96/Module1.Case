@@ -8,11 +8,7 @@ function checkRow(gameBoard) {
                 && gameBoard[i][j + 2] === gameBoard[i][j + 3]
                 && gameBoard[i][j + 3] === gameBoard[i][j + 4]
             ) {
-                if (gameBoard[i][j] === 'X') {
-                    alert('X won!')
-                } else {
-                    alert('O won!')
-                }
+                alertSetResult(gameBoard[i][j])
                 reloadAfterWin()
             }
         }
@@ -29,11 +25,7 @@ function checkCol(gameBoard) {
                 && gameBoard[i + 2][j] === gameBoard[i + 3][j]
                 && gameBoard[i + 3][j] === gameBoard[i + 4][j]
             ) {
-                if (gameBoard[i][j] === 'X') {
-                    alert('X won!')
-                } else {
-                    alert('O won!')
-                }
+                alertSetResult(gameBoard[i][j])
                 reloadAfterWin()
             }
         }

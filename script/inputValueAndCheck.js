@@ -8,6 +8,11 @@ function inputValueAndCheck(row, col) {
         document.getElementById(`gameBoard[${row}][${col}]`).innerText = 'O'
         document.getElementById(`gameBoard[${row}][${col}]`).style.color = 'blue'
     }
-    checkGameBoard(gameBoard)
-    turn++
+
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            checkGameBoard(gameBoard)
+            turn++
+        })
+    })
 }

@@ -8,8 +8,18 @@ function checkRow(gameBoard) {
                 && gameBoard[i][j + 2] === gameBoard[i][j + 3]
                 && gameBoard[i][j + 3] === gameBoard[i][j + 4]
             ) {
-                alertSetResult(gameBoard[i][j])
-                reloadAfterWin(gameBoard[i][j])
+                document.getElementById(`gameBoard[${i}][${j}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i}][${j + 1}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i}][${j + 2}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i}][${j + 3}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i}][${j + 4}]`).style.backgroundColor = '#e1ad01'
+
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        alertSetResult(gameBoard[i][j])
+                        reloadAfterWin(gameBoard[i][j])
+                    })
+                })
             }
         }
     }
@@ -25,8 +35,18 @@ function checkCol(gameBoard) {
                 && gameBoard[i + 2][j] === gameBoard[i + 3][j]
                 && gameBoard[i + 3][j] === gameBoard[i + 4][j]
             ) {
-                alertSetResult(gameBoard[i][j])
-                reloadAfterWin(gameBoard[i][j])
+                document.getElementById(`gameBoard[${i}][${j}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i + 1}][${j}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i + 2}][${j}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i + 3}][${j}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${i + 4}][${j}]`).style.backgroundColor = '#e1ad01'
+
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        alertSetResult(gameBoard[i][j])
+                        reloadAfterWin(gameBoard[i][j])
+                    })
+                })
             }
         }
     }

@@ -8,8 +8,18 @@ function checkUpperLeftDownDiagonal(gameBoard) {
                 && gameBoard[k + 2][l - 2] === gameBoard[k + 3][l - 3]
                 && gameBoard[k + 3][l - 3] === gameBoard[k + 4][l - 4]
             ) {
-                alertSetResult(gameBoard[k][l])
-                reloadAfterWin(gameBoard[k][l])
+                document.getElementById(`gameBoard[${k}][${l}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 1}][${l - 1}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 2}][${l - 2}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 3}][${l - 3}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 4}][${l - 4}]`).style.backgroundColor = '#e1ad01'
+
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        alertSetResult(gameBoard[k][l])
+                        reloadAfterWin(gameBoard[k][l])
+                    })
+                })
             }
         }
     }
@@ -25,8 +35,19 @@ function checkLowerLeftDownDiagonal(gameBoard) {
                 && gameBoard[k + 2][l - 2] === gameBoard[k + 3][l - 3]
                 && gameBoard[k + 3][l - 3] === gameBoard[k + 4][l - 4]
             ) {
-                alertSetResult(gameBoard[k][l])
-                reloadAfterWin(gameBoard[k][l])
+                document.getElementById(`gameBoard[${k}][${l}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 1}][${l - 1}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 2}][${l - 2}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 3}][${l - 3}]`).style.backgroundColor = '#e1ad01'
+                document.getElementById(`gameBoard[${k + 4}][${l - 4}]`).style.backgroundColor = '#e1ad01'
+
+                requestAnimationFrame(() => {
+                    setTimeout(() => {
+                        alertSetResult(gameBoard[k][l])
+                        reloadAfterWin(gameBoard[k][l])
+                    })
+                })
+
             }
         }
     }

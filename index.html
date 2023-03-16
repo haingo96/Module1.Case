@@ -6,23 +6,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="header">
-    <h1>
-        <span class="hai">Ｃｈｉｐの</span>
-        <span class="caro">〇</span>
-        <span class="game">✘</span>
-        <span class="hai">ゲーム</span>
-    </h1>
-    <div class="point">
-        <span class="caro pointElement"><span>〇 : </span><span id="pointO">0</span></span>
-        <span class="pointFence">|</span>
-        <span class="game pointElement"><span>✘ : </span><span id="pointX">0</span></span>
-    </div>
-    <button class="playAgain" onclick="reloadGameBoard()">Play again</button>
-</section>
 
-<div id="gameContainer" class="gameContainer"></div>
+<div class="pageContainer">
+    <section class="header">
+        <h1>
+            <span class="hai">Ｃｈｉｐの</span>
+            <span class="caro">〇</span>
+            <span class="game">✘</span>
+            <span class="hai">ゲーム</span>
+        </h1>
+        <div class="point">
+            <span class="caro pointElement"><span>〇 : </span><span id="pointO">0</span></span>
+            <span class="pointFence">|</span>
+            <span class="game pointElement"><span>✘ : </span><span id="pointX">0</span></span>
+        </div>
+        <div class="button">
+            <button class="playAgain" onclick="reloadGameBoard()">Play new game</button>
+            <button class="playAgain" onclick="resetASet()">Replay this round</button>
+        </div>
+    </section>
 
+    <div id="gameContainer" class="gameContainer"></div>
+</div>
+
+
+<script src="script/resetASet.js"></script>
 <script src="script/renewPoint.js"></script>
 <script src="script/alertSetResult.js"></script>
 <script src="script/reloadAfterWin.js"></script>

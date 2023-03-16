@@ -4,12 +4,21 @@
     font-family: "Yu Gothic UI Semilight";
 }
 
+div.pageContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
 section.header {
     text-align: center;
-    display: flex;
-    width: 900px;
-    justify-content: space-between;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 3px;
+    border-color: forestgreen;
+    border-radius: 10px;
+    padding: 10px 20px 30px 10px;
 }
 
 button.playAgain {
@@ -17,13 +26,14 @@ button.playAgain {
     border-color: forestgreen;
     border-style: wave;
     border-radius: 5px;
-    width: 150px;
+    width: 250px;
     height: 55px;
     margin-top: 7px;
     font-family: "Arial";
     font-size: x-large;
     font-weight: bold;
     color: forestgreen;
+    margin-left: 10px;
 }
 
 h1 {
@@ -47,11 +57,10 @@ span.game {
 
 div.point {
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
     font-weight: bold;
     display: flex;
-    margin-top: 15px;
-    margin-left: 40px;
+    margin: 20px auto;
 }
 
 span.pointElement {
@@ -66,6 +75,7 @@ span.pointFence {
 
 div.gameContainer {
     margin: auto;
+    margin-top: 20px;
     border-color: green;
     border-width: 2px;
     border-style: solid;

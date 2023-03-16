@@ -9,7 +9,7 @@ function checkUpperRightDownDiagonal(gameBoard) {
                 && gameBoard[m + 3][n + 3] === gameBoard[m + 4][n + 4]
             ) {
                 alertSetResult(gameBoard[m][n])
-                reloadAfterWin()
+                reloadAfterWin(gameBoard[m][n])
             }
         }
     }
@@ -26,7 +26,7 @@ function checkLowerRightDownDiagonal(gameBoard) {
                 && gameBoard[m + 3][n + 3] === gameBoard[m + 4][n + 4]
             ) {
                 alertSetResult(gameBoard[m][n])
-                reloadAfterWin()
+                reloadAfterWin(gameBoard[m][n])
             }
         }
     }

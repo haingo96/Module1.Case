@@ -9,7 +9,7 @@ function checkRow(gameBoard) {
                 && gameBoard[i][j + 3] === gameBoard[i][j + 4]
             ) {
                 alertSetResult(gameBoard[i][j])
-                reloadAfterWin()
+                reloadAfterWin(gameBoard[i][j])
             }
         }
     }
@@ -26,7 +26,7 @@ function checkCol(gameBoard) {
                 && gameBoard[i + 3][j] === gameBoard[i + 4][j]
             ) {
                 alertSetResult(gameBoard[i][j])
-                reloadAfterWin()
+                reloadAfterWin(gameBoard[i][j])
             }
         }
     }

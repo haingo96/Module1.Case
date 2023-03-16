@@ -13,11 +13,17 @@
         <span class="game">✘</span>
         <span class="hai">ゲーム</span>
     </h1>
+    <div class="point">
+        <span class="caro pointElement"><span>〇 : </span><span id="pointO">0</span></span>
+        <span class="pointFence">|</span>
+        <span class="game pointElement"><span>✘ : </span><span id="pointX">0</span></span>
+    </div>
     <button class="playAgain" onclick="reloadGameBoard()">Play again</button>
 </section>
 
 <div id="gameContainer" class="gameContainer"></div>
 
+<script src="script/renewPoint.js"></script>
 <script src="script/alertSetResult.js"></script>
 <script src="script/reloadAfterWin.js"></script>
 <script src="script/reloadGameBoard.js"></script>

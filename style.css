@@ -4,7 +4,7 @@
     font-family: "Yu Gothic UI Semilight";
 }
 
-section.header{
+section.header {
     text-align: center;
     display: flex;
     width: 900px;
@@ -12,7 +12,7 @@ section.header{
     margin: auto;
 }
 
-button.playAgain{
+button.playAgain {
     border-width: 7px;
     border-color: forestgreen;
     border-style: wave;
@@ -43,6 +43,25 @@ span.caro {
 
 span.game {
     color: #EE4B2B;
+}
+
+div.point {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+span.pointElement {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+span.pointFence {
+    color: forestgreen;
+    padding-top: 2px;
 }
 
 div.gameContainer {

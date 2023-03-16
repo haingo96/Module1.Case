@@ -14,14 +14,16 @@ section.header{
 
 button.playAgain{
     border-width: 7px;
-    border-color: darkgreen;
+    border-color: forestgreen;
     border-style: wave;
     border-radius: 5px;
     width: 150px;
     height: 55px;
     margin-top: 7px;
-    font-family: "Yu Gothic UI Semilight";
+    font-family: "Arial";
     font-size: x-large;
+    font-weight: bold;
+    color: forestgreen;
 }
 
 h1 {
@@ -32,15 +34,15 @@ h1 {
 }
 
 span.hai {
-    color: darkgreen;
+    color: forestgreen;
 }
 
 span.caro {
-    color: #EE4B2B;
+    color: #0096FF;
 }
 
 span.game {
-    color: #0096FF;
+    color: #EE4B2B;
 }
 
 div.gameContainer {
@@ -69,7 +71,7 @@ div.gameContainer {
 }
 
 div.gameElement {
-    border-color: green;
+    border-color: forestgreen;
     border-style: solid;
     border-width: 1px;
     width: 45px;

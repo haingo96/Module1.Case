@@ -13,6 +13,7 @@ function checkRow(gameBoard) {
                 } else {
                     alert('O won!')
                 }
+                reloadAfterWin()
             }
         }
     }
@@ -33,6 +34,7 @@ function checkCol(gameBoard) {
                 } else {
                     alert('O won!')
                 }
+                reloadAfterWin()
             }
         }
     }

@@ -13,6 +13,7 @@ function checkUpperLeftDownDiagonal(gameBoard) {
                 } else {
                     alert('O won!')
                 }
+                reloadAfterWin()
             }
         }
     }
@@ -33,6 +34,7 @@ function checkLowerLeftDownDiagonal(gameBoard) {
                 } else {
                     alert('O won!')
                 }
+                reloadAfterWin()
             }
         }
     }

@@ -1,5 +1,5 @@
 function reloadAfterWin(lastGameElementValue) {
-    if (confirm('Your game will be restarted!')) {
+    if (confirm("Let's start a new round!")) {
         if (lastGameElementValue === 'X') {
             alert('O GOES FIRST!')
             xPoint++

@@ -11,4 +11,8 @@ let xPoint = INIT_POINT
 
 createGameBoard(gameBoard)
 displayGameBoard()
-alert('O GOES FIRST!')
+requestAnimationFrame(() => {
+    setTimeout(() => {
+        alert('O GOES FIRST!')
+    })
+})

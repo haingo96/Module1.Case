@@ -112,6 +112,10 @@ div.gameElement {
     font-family: cursive;
 }
 
+div.gameElement:hover {
+    background-color: greenyellow;
+}
+
 div.lineContainer {
     display: flex;
     height: 45px;
